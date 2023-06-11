@@ -4,6 +4,6 @@ class BacheloretteContestantsController < ApplicationController
   end
 
   def show
-    require 'pry'; binding.pry
+    @contestant = Contestant.find(params[:id])
   end
 end
