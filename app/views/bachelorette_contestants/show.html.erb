@@ -4,7 +4,7 @@
 <div id="contestant-<%= @contestant.id %>-outings">
   <ul>
     <% @contestant.outings.each do |outing| %>
-      <li><%= link_to "#{outing.name}", "/bachelorette/#{@contestant.bachelorette.id}/contestants/#{@contestant.id}/outings/#{outing.id}" %></li>
+      <li><%= link_to "#{outing.name}", "/bachelorettes/#{@contestant.bachelorette.id}/contestants/#{@contestant.id}/outings/#{outing.id}" %></li>
     <% end %>
   </ul>
 </div>

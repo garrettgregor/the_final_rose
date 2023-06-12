@@ -1,5 +1,5 @@
 class ContestantOutingsController < ApplicationController
-  def index
-    require 'pry'; binding.pry
+  def show
+    @outing = Outing.find(params[:id])
   end
 end

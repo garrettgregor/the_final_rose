@@ -66,9 +66,9 @@ RSpec.describe "bachelorette contestants show page", type: :feature do
     visit bachelorette_contestant_path(@bachelorette_20, @contestant_3)
 
     within "#contestant-#{@contestant_3.id}-outings" do
-      expect(page).to have_link(@outing_1.name, href: "/bachelorette/#{@bachelorette_20.id}/contestants/#{@contestant_3.id}/outings/#{@outing_1.id}")
-      expect(page).to have_link(@outing_2.name, href: "/bachelorette/#{@bachelorette_20.id}/contestants/#{@contestant_3.id}/outings/#{@outing_2.id}")
-      expect(page).to have_link(@outing_3.name, href: "/bachelorette/#{@bachelorette_20.id}/contestants/#{@contestant_3.id}/outings/#{@outing_3.id}")
+      expect(page).to have_link(@outing_1.name, href: "/bachelorettes/#{@bachelorette_20.id}/contestants/#{@contestant_3.id}/outings/#{@outing_1.id}")
+      expect(page).to have_link(@outing_2.name, href: "/bachelorettes/#{@bachelorette_20.id}/contestants/#{@contestant_3.id}/outings/#{@outing_2.id}")
+      expect(page).to have_link(@outing_3.name, href: "/bachelorettes/#{@bachelorette_20.id}/contestants/#{@contestant_3.id}/outings/#{@outing_3.id}")
     end
   end
 end
